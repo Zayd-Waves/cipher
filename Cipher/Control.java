@@ -17,7 +17,7 @@ public class Control {
 
 
 
-    /* Control class constructor. Will complete later
+    /* Control class constructor. Will complete later.
        - Waves
     */
     public Control() { }
