@@ -22,7 +22,7 @@ public class Main {
         
         // Uncomment these lines only if you have a working startProgram() that you would like to test
         
-        //Control cipher = new Control();
-        //cipher.startProgram();
+        Control cipher = new Control();
+        cipher.startProgram();
     }
 }
