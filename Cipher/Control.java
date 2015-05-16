@@ -30,9 +30,19 @@ public class Control {
 			screen.printMainMenu();
 			choice = screen.choice();
 			if(choice == 1){
-				screen.printEncryptMenu();
+				//screen.printEncryptMenu();
+                String m = screen.takeMessageFromUser();
+                Message theMsg = new Message(m);
+                int key = screen.takeKeyFromUser();
+                theMsg.encrypt((char)key);
+                screen.printEncryptedMessage(theMsg.getMessage());
 			}else if(choice == 2){
-				screen.printDecryptMenu();
+				//screen.printDecryptMenu();
+                String m = screen.takeMessageFromUser();
+                Message theMsg = new Message(m);
+                int key = screen.takeKeyFromUser();
+                theMsg.decrypt((char)key);
+                screen.printDecryptedMessage(theMsg.getMessage());
 			}
 		}
 		
